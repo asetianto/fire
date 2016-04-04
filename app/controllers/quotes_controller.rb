@@ -4,6 +4,7 @@ class QuotesController < ApplicationController
   end
 
 # since we moved our form into our modal, we don't need the actual page where the form was running before anymore
+# we also don't need app/views/quotes/new.html.erb
 #  def new
 #    @quote = Quote.new
 #  end
