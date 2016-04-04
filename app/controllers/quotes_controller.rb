@@ -3,9 +3,10 @@ class QuotesController < ApplicationController
     @quote = Quote.order("RANDOM()").first
   end
 
-  def new
-    @quote = Quote.new
-  end
+# since we moved our form into our modal, we don't need the actual page where the form was running before anymore
+#  def new
+#    @quote = Quote.new
+#  end
 
   def create
     @quote = Quote.create(quote_params)
